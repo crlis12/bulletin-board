@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>건강설문</title>
+</head>
+<body>
+    <h2>건강설문</h2>
+    <form method="post">
+        <p>
+            1. 성별을 입력해주세요.<br/>
+            <label><input type="radio" name="responses[0]" value="남">남자</label>
+            <label><input type="radio" name="responses[0]" value="여">여자</label>
+        </p>
+        <p>
+            2. 고객님의 나이를 입력해주세요.<br/>
+            <input type="text" name="responses[1]">
+        </p>
+        <p>
+            3. 불편하시거나 걱정되는 것들을 선택하세요.
+            <label class="3_survey"><input type="checkbox" name="1_select" value=data-only="null">소화/장</label>
+            <label class="3_survey"><input type="checkbox" name="2_select" value=data-only="null">피로감</label>
+            <label class="3_survey"><input type="checkbox" name="3_select" value=data-only="null">뼈와 관절</label>
+            <label class="3_survey"><input type="checkbox" name="4_select" value=data-only="null">혈관/혈액순환</label>
+            <label class="3_survey"><input type="checkbox" name="5_select" value=data-only="null">피부</label>
+        </p>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

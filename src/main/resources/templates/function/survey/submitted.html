@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>응답내용</title>
+</head>
+<body>
+    <p>응답 내용 :</p>
+    <ul>
+        <c:forEach var="response"
+                   items="${ansData.responses}" var Status = "status">
+            <li>${status.index+1}번 문항: ${responses}</li>
+        </c:forEach>
+    </ul>
+</body>
+</html>
